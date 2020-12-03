@@ -1,6 +1,5 @@
 ﻿using Prism.Regions;
 using PrismOutlook.Core;
-using System.Windows;
 using Telerik.Windows.Controls;
 
 namespace PrismOutlook.Views
@@ -10,20 +9,22 @@ namespace PrismOutlook.Views
     /// </summary>
     public partial class MainWindow : RadRibbonWindow
     {
-        private readonly IRegionManager _regionManager;
+       
+        private readonly IApplicationCommands _appCommands;
 
-        public MainWindow(IRegionManager regionManager)
+        public MainWindow(IApplicationCommands appCommands)
         {
             StyleManager.ApplicationTheme = new Office2016Theme();
             InitializeComponent();
-            _regionManager = regionManager;
+            _appCommands = appCommands;
         }
 
         private void RadOutlookBar_SelectionChanged(object sender, RadSelectionChangedEventArgs e)
         {
             if (((RadOutlookBar)sender).SelectedItem is IOutlookBarGroup group)
             {
-                _regionManager.RequestNavigate(RegionNames.ContentRegion, group.DefaultNavigationPath);
+                _appCommands.NavigateCommand.Execute(group.DefaultNavigationPath);
+                //_regionManager.RequestNavigate(RegionNames.ContentRegion, group.DefaultNavigationPath);
             }
         }
     }
