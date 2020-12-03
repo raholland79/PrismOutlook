@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <AssemblyName>PrismOutlook.Modules.Mail</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Prism.Wpf" Version="7.2.0.1422" />
+    <PackageReference Include="Telerik.UI.for.Wpf.NetCore.Xaml" Version="2020.3.1020" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\PrismOutlook.Business\PrismOutlook.Business.csproj" />
+    <ProjectReference Include="..\..\PrismOutlook.Core\PrismOutlook.Core.csproj" />
+  </ItemGroup>
+</Project>

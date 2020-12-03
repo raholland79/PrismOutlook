@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <AssemblyName>PrismOutlook</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Prism.Unity" Version="7.2.0.1422" />
+    <PackageReference Include="Telerik.UI.for.Wpf.NetCore.Xaml" Version="2020.3.1020" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Modules\PrismOutlook.Modules.Calendar\PrismOutlook.Modules.Calendar.csproj" />
+    <ProjectReference Include="..\Modules\PrismOutlook.Modules.Contacts\PrismOutlook.Modules.Contacts.csproj" />
+    <ProjectReference Include="..\Modules\PrismOutlook.Modules.Mail\PrismOutlook.Modules.Mail.csproj" />
+    <ProjectReference Include="..\PrismOutlook.Core\PrismOutlook.Core.csproj" />
+  </ItemGroup>
+</Project>
