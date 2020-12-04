@@ -13,13 +13,14 @@
             
         </Grid.RowDefinitions>
 
-        <telerik:RadRibbonView Title="Muh Apps" x:Name="RibbonView" prism:RegionManager.RegionName="{x:Static core:RegionNames.RibbonRegion}">
+        <telerik:RadRibbonView Title="Outlook" x:Name="RibbonView" prism:RegionManager.RegionName="{x:Static core:RegionNames.RibbonRegion}">
 
         </telerik:RadRibbonView>
         <DockPanel LastChildFill="True" Grid.Row="1">
             <telerik:RadOutlookBar 
                 DockPanel.Dock="Left" 
                 SelectionChanged="RadOutlookBar_SelectionChanged"
+               
                 Width="150" 
                 prism:RegionManager.RegionName="{x:Static core:RegionNames.OutlookGroupRegion}">
 

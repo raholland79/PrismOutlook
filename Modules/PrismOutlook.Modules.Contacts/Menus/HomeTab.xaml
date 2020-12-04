@@ -1,9 +1,9 @@
-﻿<telerik:RadRibbonTab x:Class="PrismOutlook.Modules.Mail.Menus.HomeTab"
+﻿<telerik:RadRibbonTab x:Class="PrismOutlook.Modules.Contacts.Menus.HomeTab"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:PrismOutlook.Modules.Mail.Menus"
              xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
-             Header="Mail Home">
+             xmlns:local="clr-namespace:PrismOutlook.Modules.Contacts.Menus"
+                      Header="Contacts">
     <telerik:RadRibbonGroup Header="New">
         <telerik:RadWrapPanel>
             <telerik:RadButton Content="Button" />

@@ -21,6 +21,7 @@
                                  ShowSearchPanel="False"
                                  RowIndicatorVisibility="Hidden"
                                  AutoExpandGroups="True"
+                                 AutoExpandItems="True"
                                  >
             <i:Interaction.Triggers>
                 <i:EventTrigger EventName="SelectionChanged">
