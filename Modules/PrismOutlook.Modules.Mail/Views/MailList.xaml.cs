@@ -9,11 +9,12 @@ namespace PrismOutlook.Modules.Mail.Views
     /// </summary>
     /// 
     [DependantView(RegionNames.RibbonRegion, typeof(HomeTab))]
-    public partial class MailList : UserControl
+    public partial class MailList : UserControl, ISupportDataContext
     {
         public MailList()
         {
             InitializeComponent();
+            SetResourceReference(StyleProperty, typeof(UserControl));
         }
     }
 }

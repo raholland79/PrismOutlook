@@ -9,6 +9,7 @@ namespace PrismOutlook.Core.Regions
         {
 
         }
+
         protected override void Adapt(IRegion region, RadOutlookBar regionTarget)
         {
            region.Views.CollectionChanged += ((s,e) =>

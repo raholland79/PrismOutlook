@@ -37,5 +37,11 @@ namespace PrismOutlook
             base.ConfigureRegionAdapterMappings(regionAdapterMappings);
             regionAdapterMappings.RegisterMapping(typeof(RadOutlookBar), Container.Resolve<RadOutlookBarRegionAdapter>());
         }
+
+        protected override void ConfigureDefaultRegionBehaviors(IRegionBehaviorFactory regionBehaviors)
+        {
+            base.ConfigureDefaultRegionBehaviors(regionBehaviors);
+            regionBehaviors.AddIfMissing("DependentViewRegionBehavior", typeof(DependentViewRegionBehavior));
+        }
     }
 }

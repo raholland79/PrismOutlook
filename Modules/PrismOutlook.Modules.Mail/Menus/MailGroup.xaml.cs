@@ -1,19 +1,7 @@
-﻿using PrismOutlook.Business;
+﻿using System;
+using PrismOutlook.Business;
 using PrismOutlook.Core;
-using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 using Telerik.Windows.Controls;
 
 namespace PrismOutlook.Modules.Mail.Menus
@@ -26,6 +14,7 @@ namespace PrismOutlook.Modules.Mail.Menus
         public MailGroup()
         {
             InitializeComponent();
+            SetResourceReference(StyleProperty, typeof(RadOutlookBarItem));
         }
 
         public string DefaultNavigationPath
@@ -38,7 +27,7 @@ namespace PrismOutlook.Modules.Mail.Menus
                     return item.NavigationPath;
                 }
                 
-                return "MailList";
+                return "MailList?id=Default";
             }
         }
     }

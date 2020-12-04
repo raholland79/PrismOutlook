@@ -11,6 +11,7 @@ namespace PrismOutlook.Modules.Contacts.Menus
         public ContactsGroup()
         {
             InitializeComponent();
+            SetResourceReference(StyleProperty, typeof(RadOutlookBarItem));
         }
 
         public string DefaultNavigationPath => "ViewA";
