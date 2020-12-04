@@ -1,4 +1,5 @@
-﻿using PrismOutlook.Core;
+﻿using PrismOutlook.Business;
+using PrismOutlook.Core;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -27,6 +28,19 @@ namespace PrismOutlook.Modules.Mail.Menus
             InitializeComponent();
         }
 
-        public string DefaultNavigationPath => "MailList";
+        public string DefaultNavigationPath
+        {
+            get
+            {
+                if ((_treeListview.SelectedItems.Count() > 0) && 
+                    (_treeListview.SelectedItems[0] is NavigationItem item))
+                {
+                    return item.NavigationPath;
+                }
+                
+                return "MailList";
+            }
+        }
     }
 }
+ 

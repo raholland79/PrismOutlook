@@ -14,8 +14,8 @@ namespace PrismOutlook.Views
 
         public MainWindow(IApplicationCommands appCommands)
         {
-            StyleManager.ApplicationTheme = new Office2016Theme();
             InitializeComponent();
+            StyleManager.ApplicationTheme = new Office2016Theme();
             _appCommands = appCommands;
         }
 

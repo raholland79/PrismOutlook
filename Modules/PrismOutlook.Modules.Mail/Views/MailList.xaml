@@ -4,6 +4,6 @@
              xmlns:prism="http://prismlibrary.com/"             
              prism:ViewModelLocator.AutoWireViewModel="True"> 
     <Grid>
-        <TextBlock Text="Mail List" Margin="10" FontWeight="Medium" FontSize="20"/>
+        <TextBlock Text="{Binding Title}" Margin="10" FontWeight="Medium" FontSize="20"/>
     </Grid>
 </UserControl>

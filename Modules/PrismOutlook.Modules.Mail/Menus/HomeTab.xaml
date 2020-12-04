@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:PrismOutlook.Modules.Mail.Menus"
              xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
-             Header="Home">
+             Header="Mail">
     <telerik:RadRibbonGroup Header="New">
         <telerik:RadWrapPanel>
             <telerik:RadButton Content="Button" />
